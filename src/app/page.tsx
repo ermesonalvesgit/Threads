@@ -31,8 +31,10 @@ export default function App() {
   ];
 
   return (
-    <div className="bg-zinc-900 min-h-screen min-w-full">
-      <Navbar />
+    <div className="bg-zinc-300 dark:bg-zinc-900 min-h-screen min-w-full">
+      <div className="max-w-5xl m-auto">
+        <Navbar />
+      </div>
     </div>
   );
 }

@@ -35,19 +35,22 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-zinc-900 min-h-screen min-w-full">
+    <div className="bg-zinc-300 dark:bg-zinc-900 min-h-screen min-w-full">
       <nav className="flex justify-between px-4 py-4">
-        <div className="flex justify-center text-center items-center">
-          <Image src={Threads} alt="Logo Threads" className="w-7 h-7" />
+        <div className="flex justify-center text-center items-center text-zinc-600 hover:text-zinc-300">
+          <Image src={Threads} alt="Logo Threads" className="w-7 h-7 " />
         </div>
-        <ul className="flex gap-4">
+        <ul className="flex gap-2">
           {Menus.map((menu) => (
             <li
               key={menu.Alt}
-              className="cursor-pointer flex justify-center items-center h-12 w-12 rounded hover:bg-zinc-700 px-4 py-5 transition-all duration-300 ease-in-out"
+              className="cursor-pointer flex justify-center items-center h-12 w-12 rounded hover:bg-zinc-50 px-4 py-5 transition-all duration-300 ease-in-out"
             >
               <Link href={menu.Route}>
-                <menu.Icon size={20} className="text-zinc-300"></menu.Icon>
+                <menu.Icon
+                  size={20}
+                  className="text-zinc-600 hover:text-zinc-300 transition-all duration-300 ease-in-out"
+                ></menu.Icon>
               </Link>
             </li>
           ))}
