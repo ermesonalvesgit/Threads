@@ -9,12 +9,12 @@ import {
 
 import { AlignRight } from "lucide-react";
 
-export function DropdownMenuCheckboxes() {
+export function DropdownMenuItems() {
   return (
     <div className="cursor-pointer">
       <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <AlignRight size={20} className="px-4 py-5 rounded-sm" />
+        <DropdownMenuTrigger asChild className="h-6 w-6 rounded">
+          <AlignRight className="hover:text-zinc-50 dark:text-zinc-700 dark:hover:text-zinc-300 transition-all duration-300 ease-in-out"/>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56 bg-zinc-300 dark:bg-zinc-900 border-zinc-50 dark:border-zinc-800">
           <DropdownMenuCheckboxItem className="text-zinc-700 dark:text-zinc-300">

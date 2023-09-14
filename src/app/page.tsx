@@ -1,5 +1,6 @@
 import { AvatarDemo } from "@/components/components-private/avatarDemo";
 import { ModalDialogPost } from "@/components/components-private/createPost";
+import ListPost from "@/components/components-private/listPost";
 import Navbar from "@/components/components-private/navbar";
 import { Separator } from "@/components/ui/separator";
 
@@ -21,6 +22,11 @@ export default function App() {
           </div>
         </div>
         <Separator />
+      </div>
+
+      {/* ListPost */}
+      <div className="max-w-lg m-auto">
+        <ListPost />
       </div>
     </div>
   );

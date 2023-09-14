@@ -1,11 +1,10 @@
 import { Home, Heart, PenSquare, User, Search } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { DropdownMenuCheckboxes } from "@/components/components-private/dropdown";
+import { DropdownMenuItems } from "@/components/components-private/dropdown";
 
 import Threads from "@/assets/threads.svg";
 export default function Navbar() {
-
   const Menus = [
     {
       Icon: Home,
@@ -43,8 +42,9 @@ export default function Navbar() {
     <div className="bg-zinc-300 dark:bg-zinc-900 h-16 min-w-full">
       <nav className="flex justify-between px-4 py-4">
         <div className="flex justify-center text-center items-center text-zinc-600 hover:text-zinc-300">
-          <Image src={Threads} alt="Logo Threads" className="w-7 h-7 " />
+          <Image src={Threads} alt="Logo Threads" className="w-7 h-7" />
         </div>
+
         <ul className="flex gap-2">
           {Menus.map((menu) => (
             <li
@@ -60,7 +60,10 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <DropdownMenuCheckboxes />
+
+        <div className="flex justify-center items-center">
+          <DropdownMenuItems />
+        </div>
       </nav>
     </div>
   );

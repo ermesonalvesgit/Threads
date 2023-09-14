@@ -10,7 +10,7 @@ export function ModalDialogPost() {
   return (
     <div className="w-full gap-2 flex">
       <Dialog>
-        <DialogTrigger>Post</DialogTrigger>
+        <DialogTrigger className="px-5 py-2 rounded border border-zinc-700 dark:hover:border-zinc-600 transition-all duration-300 ease-in-out">Post</DialogTrigger>
         <DialogContent className="flex flex-1 text-center gap-2 items-center">
           <Textarea placeholder="Digite seu novo post" />
           <Button
